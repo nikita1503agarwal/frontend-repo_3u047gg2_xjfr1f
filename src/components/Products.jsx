@@ -16,6 +16,15 @@ const products = [
     features: ["Termite-proof", "Low maintenance", "Natural textures"],
     image:
       "https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?q=80&w=1600&auto=format&fit=crop",
+  },
+  {
+    id: "louvres",
+    title: "Aluminium Louvres",
+    description:
+      "Architectural louvres for shading, ventilation and modern facades.",
+    features: ["Weather-resistant", "Custom profiles", "Powder-coated finishes"],
+    image:
+      "https://images.unsplash.com/photo-1541542684-4a88a04a67ee?q=80&w=1600&auto=format&fit=crop",
   }
 ];
 
@@ -25,10 +34,10 @@ export default function Products() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-white">Exterior Products</h2>
-          <p className="mt-3 text-blue-100/80">Focused on ACP & WPC for long-lasting exteriors</p>
+          <p className="mt-3 text-blue-100/80">ACP Sheets • WPC Cladding • Aluminium Louvres</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((p) => (
             <div key={p.id} className="group rounded-2xl overflow-hidden border border-white/10 bg-slate-800/50 hover:bg-slate-800 transition shadow">
               <div className="h-48 overflow-hidden">

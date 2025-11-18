@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Products from "./components/Products";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import { Link } from 'react-router-dom'
 
 function App() {
   return (
@@ -10,6 +11,11 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-end">
+            <Link to="/admin/login" className="text-xs text-blue-300/70 hover:text-white underline">Admin</Link>
+          </div>
+        </div>
         <Products />
         <About />
         <Contact />
